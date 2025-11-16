@@ -1,16 +1,128 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicole Rhiannon</title>
-  <link rel="stylesheet" href="styles.css" /></head><body>
+  <title>Nicole Rhiannon - Intuitive Tarot, Energy Healing, Light Therapy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function updateYear() {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    }
+  </script>
+</head>
+<body onload="updateYear()">
   <header class="hero">
     <img src="assets/logo.png" alt="Nicole Rhiannon Logo" class="logo" />
     <h1 class="site-title">Nicole Rhiannon</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="intro">
-    <p>
-      Intuitive insight. Feminine magic. Grounded clarity.  
-      A space where intuition meets practical guidance.
+  <section id="hero-statement" class="padded-section hero-text">
+    <h2>AWAKEN YOUR INNER LIGHT<br>RADIATE YOUR TRUE SELF</h2>
+    <p>Nicole Rhiannon offers a range of services designed to bring **balance, peace, and clarity**.</p>
+    <p>Energy Healing, Red Light Therapy, & Intuitive Tarot Readings serve as catalysts to:<br>
+      <strong>Unburden the Spirit • Deepen Self-Connection • Reveal your Divine Purpose</strong>
     </p>
-  </section></body></html>
+    <a href="#services" class="button">Explore Services & Book Now</a>
+  </section>
+
+  <hr>
+
+  <section id="about" class="padded-section">
+    <h2>Hi, I'm Nicole Rhiannon</h2>
+    <p>I am a **top-rated Tarot Reader and Energy Healer** on multiple web & phone platforms, providing **over 1,800 professional Readings** since 2020.</p>
+    <p>I serve those seeking guidance, ready to experience personal breakthroughs, pierce the veil, and uncover the Truth. I am here to guide you towards a brighter future.</p>
+    <p>I am also a **Certified Light Therapist**, thoroughly enjoying the work of bringing light—emotionally, spiritually, and physically—to people's world.</p>
+
+    <h3>My Approach & Certifications</h3>
+    <ul>
+      <li>Certified Intuitive Tarot Reader</li>
+      <li>Certified Chios Energy Healing Practitioner</li>
+      <li>Certified Light Therapist</li>
+    </ul>
+    
+    <address>
+      **LOCATION:** The Healing Cottage<br>
+      113 Water Street, East Dundee, IL 60118<br>
+      <span class="small-text">*By Appointment Only*</span>
+    </address>
+  </section>
+
+  <hr>
+
+  <section id="services" class="padded-section">
+    <h2>Services & Offerings</h2>
+    <div class="service-grid">
+      <div class="service-item"><strong>Tarot Readings</strong><span>$10.00 – $40.00</span></div>
+      <div class="service-item"><strong>Energy Healing</strong><span>$10.00 – $40.00</span></div>
+      <div class="service-item"><strong>Red Light Therapy</strong><span>$25.00</span></div>
+      <div class="service-item"><strong>3 Minute Video Reading</strong><span>$9.00</span></div>
+      <div class="service-item"><strong>1 Question Answered</strong><span>$5.00</span></div>
+      <div class="service-item"><strong>Private Events with Nicole</strong><span>$50.00</span></div>
+    </div>
+
+    <h3>Courses</h3>
+    <div class="course-item">
+      <strong>Spiritual Ascension & Self-Healing Course</strong> (4 Sessions & 1:1 Session)
+      <span class="price-right">$150.00</span>
+    </div>
+    <div class="course-item description">
+      **Condensed Version** includes 2.5 hours of video content, worksheets & syllabus. Does not include video links for additional learning or the 1:1 session.
+    </div>
+    <div class="course-item">
+      <strong>Intuitive Tarot Course</strong><span class="price-right gold-text">Details Coming Soon</span>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="reviews" class="padded-section">
+    <h2>REAL REVIEWS FROM REAL PEOPLE</h2>
+    <div class="review-box">
+      <p>"She's a Gem! Her ability to intelligently interpret and analyze intuitive information was off the charts. Like chatting with a good and honest friend over tea."</p>
+      <p class="reviewer">— Heather in Virginia, 09/28/2024</p>
+    </div>
+    <div class="review-box">
+      <p>"After a major surgery I tried red light therapy. It truly increased my healing and energy. Nicole has a gentle and informative approach."</p>
+      <p class="reviewer">— Noelle in Illinois, 02/20/2025</p>
+    </div>
+    <div class="review-box">
+      <p>"She is wonderful and extremely accurate... she picked up on my situation very quickly and told me exactly what I needed to hear."</p>
+      <p class="reviewer">— Sarah in New York, 3/11/2024</p>
+    </div>
+    <p class="center-text"><strong>Over 400 reviews on multiple platforms.</strong></p>
+  </section>
+
+  <hr>
+
+  <section id="contact" class="padded-section">
+    <h2>Contact & Booking</h2>
+    <p>To book a session or course, please reach out directly:</p>
+    
+    <div class="contact-details">
+      <p>Email: <a href="mailto:nicolerhiannon333@gmail.com">nicolerhiannon333@gmail.com</a></p>
+      <p>Phone: <a href="tel:2243373092">224-337-3092</a></p>
+    </div>
+
+    <p class="small-text">
+      **Payment Methods Accepted:**<br>
+      CashApp • Apple Pay • Google Pay • Visa • Mastercard • American Express • Discover • JCB
+    </p>
+
+    <p class="small-text">
+      *Note: The contact form feature you had on Square is not available on this free, static GitHub Pages site. Please use the email or phone number above.*
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nicole Rhiannon. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
