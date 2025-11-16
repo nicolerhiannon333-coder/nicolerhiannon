@@ -1,0 +1,29 @@
+:root {
+  --purple: #7F53A7;
+  --white: #ffffff;
+  --gold: #ffd700;
+}body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--purple);
+  color: var(--white);
+  text-align: center;
+}.hero {
+  padding: 40px 20px;
+}.logo {
+  width: 80px;
+  height: auto;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.4));
+}.site-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}.intro {
+  padding: 30px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 550px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
