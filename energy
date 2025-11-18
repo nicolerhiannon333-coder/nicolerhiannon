@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Energy Healing — Nicole Rhiannon</title>
-<link rel="stylesheet" href="styles.css">
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Energy Healing — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="assets/favicon.png"></head>
 <body>
   <header class="header container">
-    <div class="brand"><img src="assets/logo.png" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a>
-    </nav>
+    <div class="brand"><img src="assets/logo.jpg" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a></nav>
     <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
   </header>
 
-  <div class="mobile-nav container" id="mobileNav" style="display:none">
-    <a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-  </div>
+  <div class="mobile-nav container" id="mobileNav" style="display:none"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
 
   <main>
-    <section class="hero container">
-      <h2>Energy Healing</h2>
-      <p class="lead">Harmonize your body and mind with Chios® energy healing.</p>
-    </section>
+    <section class="hero container"><h2>Energy Healing</h2><p class="lead">Harmonize your body and mind with Chios® energy healing.</p></section>
 
     <section class="section container">
+      <img src="assets/chios_cropped.png" alt="Chios Energy" style="width:100%;max-width:900px;border-radius:10px;margin-bottom:12px">
       <h3>About Chios® Energy Healing</h3>
-      <p>Chios® is a holistic energy modality that balances the body's energy systems for physical, emotional, mental, and spiritual well-being.</p>
-
-      <h3>Session Includes</h3>
+      <p>Chios® balances and restores the body's energy systems for physical, emotional, mental, and spiritual well-being.</p>
       <ul>
-        <li>Chakra cleansing and balancing</li>
-        <li>Aura clearing and charging</li>
+        <li>Chakra cleansing & balancing</li>
+        <li>Aura clearing & charging</li>
         <li>Detect & correct energetic defects</li>
       </ul>
 
-      <p>Available in-person or remote (Google Meet). Remote sessions are interactive and involve guided self-testing and energy work.</p>
-
+      <p>Available in-person or remote (Google Meet). Remote sessions are interactive and involve guided energy work.</p>
       <p><strong>Prices:</strong> $10 for 5 min • $25 for 15 min • $40 for 30 min</p>
       <p class="small">Payments: Cash, Card, Zelle, PayPal</p>
       <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=Energy%20Healing%20Booking">Book Energy Healing</a>
     </section>
   </main>
 
-  <footer class="footer"><div class="small">nicolerhiannon333@gmail.com • 224-337-3092</div></footer>
+  <footer class="footer"><div class="small"><a href="mailto:nicolerhiannon333@gmail.com" style="color:inherit;text-decoration:underline">nicolerhiannon333@gmail.com</a> • <a href="tel:2243373092" style="color:inherit;text-decoration:underline">224-337-3092</a></div></footer>
 
 <script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
 </body>
