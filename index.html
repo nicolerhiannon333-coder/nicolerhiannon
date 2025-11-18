@@ -1,85 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nicole Rhiannon — Awaken Your Inner Light</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nicole Rhiannon — Home</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 <body>
-  <header class="header container">
-    <div class="brand">
-      <img src="assets/logo.jpg" alt="logo" class="logo">
-      <h1>Nicole Rhiannon</h1>
-    </div>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="cta">Contact</a>
-    </nav>
+<header class="header">
+  <div class="brand">
+    <img src="assets/logo.png" alt="logo" class="logo">
+    <h1>NICOLE RHIANNON</h1>
+  </div>
 
-    <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
-  </header>
-
-  <div class="mobile-nav container" id="mobileNav" style="display:none">
+  <nav class="nav">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="reviews.html">Reviews</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero container">
-      <h2>AWAKEN YOUR<br>INNER LIGHT<br><span class="gold">RADIATE YOUR TRUE SELF</span></h2>
-      <p class="lead">Nicole Rhiannon offers a range of services designed to bring balance, peace, and clarity.</p>
-      <p class="lead small">Energy Healing, Red Light Therapy, & Intuitive Tarot Readings serve as catalysts to unburden the spirit, deepen self-connection, and reveal your divine purpose.</p>
-    </section>
+<main class="container">
+  <section class="hero">
+    <h2>AWAKEN YOUR<br>INNER LIGHT<br><span class="gold">RADIATE YOUR TRUE SELF</span></h2>
+    <p class="lead">Nicole Rhiannon offers a range of services designed to bring balance, peace, and clarity.</p>
+    <p class="lead">Energy Healing, Red Light Therapy, & Intuitive Tarot Readings serve as catalysts to unburden the spirit, deepen self-connection, and reveal your divine purpose.</p>
+  </section>
 
-    <section class="section container">
-      <div class="grid" style="align-items:center">
-        <div style="text-align:center">
-          <img src="assets/nicoleplain.jpg" alt="Nicole" style="width:100%;max-width:420px;border-radius:10px;margin-bottom:12px">
-        </div>
-        <div>
-          <h3 class="gold">Hi, I'm Nicole Rhiannon</h3>
-          <p class="small">
-            A top-rated Tarot Reader and Energy Healer on multiple web & phone platforms. Starting in 2020, I have provided over <strong>2,000</strong> professional Readings to seekers just like you.
-          </p>
-
-          <p class="small">
-            Trusted worldwide, I am honored to serve those seeking guidance, who are ready to experience personal breakthroughs, pierce the veil, shatter the illusion, and truly get to the Truth. I am here to guide you towards a brighter future.
-          </p>
-
-          <p class="small">
-            I take the term "light worker" to another level, by also being a certified Light Therapist, and I thoroughly enjoy bringing light to peoples' world. Light Therapy has profound benefits, and can be an option to consider along your journey.
-          </p>
-
-          <p class="center"><a class="btn" href="contact.html">Take the first step toward lasting transformation</a></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container center">
-      <img src="assets/nicolebooks.jpg" alt="Nicole books" style="width:100%;max-width:700px;border-radius:10px">
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="small">
-      <a href="mailto:nicolerhiannon333@gmail.com" style="color:inherit;text-decoration:underline">nicolerhiannon333@gmail.com</a> • <a href="tel:2243373092" style="color:inherit;text-decoration:underline">224-337-3092</a>
+  <section class="section grid" style="align-items:center">
+    <div>
+      <img src="assets/nicoleplain.jpg" alt="Nicole portrait" style="width:100%;border-radius:10px">
     </div>
-    <img src="assets/logo.jpg" alt="footer logo">
-    <div class="small">© <span id="year"></span> Nicole Rhiannon</div>
-  </footer>
+    <div>
+      <h3 class="gold">Hi, I'm NICOLE RHIANNON</h3>
+      <p>A top-rated Tarot Reader and Energy Healer on multiple web & phone platforms. Starting in 2020, I have provided over <strong>2,000</strong> professional Readings to seekers just like you.</p>
+      <p>Trusted worldwide, I am honored to serve those seeking guidance, who are ready to experience personal breakthroughs, pierce the veil, shatter the illusion, and truly get to the Truth. I am here to guide you towards a brighter future.</p>
+      <p>I take the term "light worker" to another level, by also being a certified Light Therapist, and I thoroughly enjoy bringing light to peoples' world. Light Therapy has profound benefits, and can be an option to consider along your journey.</p>
+      <p><a class="btn" href="contact.html">Take the first step toward lasting transformation</a></p>
+    </div>
+  </section>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}
-</script>
+  <section class="section center">
+    <img src="assets/nicolebooks.jpg" alt="Nicole books" style="width:100%;max-width:800px;border-radius:10px">
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="payments">
+    <a href="https://paypal.me/333nicole" target="_blank" rel="noopener">PayPal</a> • <a href="mailto:nicolerhiannon333@gmail.com">Zelle (nicolerhiannon333@gmail.com)</a>
+  </div>
+  <div>
+    <a class="social" href="https://www.facebook.com/nicolerhiannon.light" target="_blank">Facebook</a>
+    <a class="social" href="https://www.instagram.com/nicolerhiannon333/" target="_blank">Instagram</a>
+    <a class="social" href="https://www.tiktok.com/@nicolerhiannon333" target="_blank">TikTok</a>
+    <a class="social" href="https://www.youtube.com/@nicolerhiannon333" target="_blank">YouTube</a>
+  </div>
+  <img src="assets/footer-logo.png" alt="footer logo" class="footer-logo">
+  <div>© <span id="year"></span> NICOLE RHIANNON</div>
+</footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
