@@ -1,68 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nicole Rhiannon — Home</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="assets/favicon.png" type="image/png">
-</head>
-<body>
+/* Base styles for Nicole Rhiannon website */
 
-<header class="header">
-  <div class="brand">
-    <img src="assets/logo.png" alt="logo" class="logo">
-    <h1>NICOLE RHIANNON</h1>
-  </div>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #3d0056; /* deep purple */
+  color: white;
+  font-family: 'Larsseit', sans-serif;
+}
 
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" class="contact-btn">Contact</a>
-  </nav>
-</header>
+h1, h2, h3, h4, h5 {
+  font-family: 'Comfortaa', sans-serif;
+  color: #d4af37; /* gold */
+  margin-top: 0;
+}
 
-<main class="container">
-  <section class="hero">
-    <h2>AWAKEN YOUR<br>INNER LIGHT<br><span class="gold">RADIATE YOUR TRUE SELF</span></h2>
-    <p class="lead">Nicole Rhiannon offers a range of services designed to bring balance, peace, and clarity.</p>
-    <p class="lead">Energy Healing, Red Light Therapy, & Intuitive Tarot Readings serve as catalysts to unburden the spirit, deepen self-connection, and reveal your divine purpose.</p>
-  </section>
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
 
-  <section class="section grid" style="align-items:center">
-    <div>
-      <img src="assets/nicoleplain.jpg" alt="Nicole portrait" style="width:100%;border-radius:10px">
-    </div>
-    <div>
-      <h3 class="gold">Hi, I'm NICOLE RHIANNON</h3>
-      <p>A top-rated Tarot Reader and Energy Healer on multiple web & phone platforms. Starting in 2020, I have provided over <strong>2,000</strong> professional Readings to seekers just like you.</p>
-      <p>Trusted worldwide, I am honored to serve those seeking guidance, who are ready to experience personal breakthroughs, pierce the veil, shatter the illusion, and truly get to the Truth. I am here to guide you towards a brighter future.</p>
-      <p>I take the term "light worker" to another level, by also being a certified Light Therapist, and I thoroughly enjoy bringing light to peoples' world. Light Therapy has profound benefits, and can be an option to consider along your journey.</p>
-      <p><a class="btn" href="contact.html">Take the first step toward lasting transformation</a></p>
-    </div>
-  </section>
+button, .gold-button {
+  background: #d4af37;
+  color: #3d0056;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
-  <section class="section center">
-    <img src="assets/nicolebooks.jpg" alt="Nicole books" style="width:100%;max-width:800px;border-radius:10px">
-  </section>
-</main>
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: transparent;
+  position: sticky;
+  top: 0;
+}
 
-<footer class="footer">
-  <div class="payments">
-    <a href="https://paypal.me/333nicole" target="_blank" rel="noopener">PayPal</a> • <a href="mailto:nicolerhiannon333@gmail.com">Zelle (nicolerhiannon333@gmail.com)</a>
-  </div>
-  <div>
-    <a class="social" href="https://www.facebook.com/nicolerhiannon.light" target="_blank">Facebook</a>
-    <a class="social" href="https://www.instagram.com/nicolerhiannon333/" target="_blank">Instagram</a>
-    <a class="social" href="https://www.tiktok.com/@nicolerhiannon333" target="_blank">TikTok</a>
-    <a class="social" href="https://www.youtube.com/@nicolerhiannon333" target="_blank">YouTube</a>
-  </div>
-  <img src="assets/footer-logo.png" alt="footer logo" class="footer-logo">
-  <div>© <span id="year"></span> NICOLE RHIANNON</div>
-</footer>
+header img.logo {
+  width: 60px;
+  height: auto;
+}
 
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+nav a {
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
+
+/* Layout Tables */
+.table {
+  display: grid;
+  gap: 30px;
+}
+
+.table.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.table.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 120px;
+  height: auto;
+}
