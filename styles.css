@@ -1,5 +1,5 @@
-/* styles.css - global styles for the site */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+/* styles.css - global site styles (royal purple, white, gold) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root{
   --purple: #7F53A7;
@@ -11,162 +11,94 @@
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
 body{
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   background: var(--purple);
   color: var(--white);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  line-height:1.55;
+  line-height:1.6;
+  -webkit-text-size-adjust:100%;
 }
 
-/* layout container */
-.container{
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 28px;
-}
+/* layout */
+.container{max-width:var(--max-width);margin:0 auto;padding:20px}
 
-/* header / nav */
-.header {
+/* header/nav - logo left, nav right */
+.header{
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:16px;
-  padding:18px 28px;
+  padding:18px 24px;
 }
-.brand {
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
-.brand img.logo{
-  width:64px;
-  height:auto;
-  border-radius:6px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-.brand h1{
-  margin:0;
-  font-family: "Playfair Display", serif;
-  font-weight:700;
-  letter-spacing:2px;
-  font-size:1.15rem;
-  color:var(--white);
-}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img.logo{width:64px;height:auto;border-radius:6px;box-shadow:0 8px 22px rgba(0,0,0,0.25)}
+.brand h1{margin:0;font-weight:700;letter-spacing:2px;color:var(--white);font-size:1rem}
 
-/* nav */
-.nav {
-  display:flex;
-  gap:18px;
-  align-items:center;
-}
-.nav a{
-  color:var(--white);
-  text-decoration:none;
-  font-weight:600;
-  padding:8px 10px;
-  border-radius:6px;
-}
+/* nav (right aligned) */
+.nav{display:flex;gap:14px;align-items:center}
+.nav a{color:var(--white);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
 .nav a:hover{background:rgba(255,255,255,0.06)}
-.cta{
-  background:var(--gold);
-  color:#222;
-  padding:8px 12px;
-  border-radius:6px;
-  font-weight:700;
-}
+.cta{background:var(--gold);color:#111;padding:8px 12px;border-radius:8px;font-weight:800}
 
-/* mobile nav toggle */
-.menu-toggle{display:none}
+/* mobile toggle */
+.menu-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white);padding:8px;border-radius:8px}
 
 /* hero */
-.hero{
-  text-align:center;
-  padding:56px 20px;
-}
+.hero{padding:54px 20px;text-align:center}
 .hero h2{
-  font-family:"Playfair Display", serif;
-  font-size:2rem;
-  margin:6px 0 14px;
+  margin:6px 0 12px;
+  font-size:2.0rem;
+  font-weight:800;
   letter-spacing:1px;
+  text-transform:uppercase;
 }
-.lead{
-  max-width:900px;
-  margin:0 auto;
-  font-size:1.05rem;
-  opacity:0.95;
-}
+.gold{color:var(--gold)}
+.lead{max-width:880px;margin:0 auto;font-size:1.02rem;opacity:0.98}
 
-/* sections */
-.section{
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-  margin:28px auto;
-  padding:30px;
-  border-radius:10px;
-  max-width:var(--max-width);
-}
+/* section blocks */
+.section{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));margin:28px auto;padding:26px;border-radius:10px;max-width:var(--max-width)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
 
-/* cards grid */
-.grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-  gap:18px;
-}
+/* services table: three across, two rows (desktop) */
+.services-table{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service-card{background:rgba(0,0,0,0.06);padding:16px;border-radius:10px;text-align:center}
+.service-card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+.service-card h3{margin:6px 0;font-weight:700}
 
-/* service card */
-.card{
-  background: rgba(0,0,0,0.06);
-  padding:18px;
-  border-radius:10px;
-  min-height:120px;
-}
-.card h3{margin-top:0;font-family:"Playfair Display", serif}
-.card p{margin:8px 0 0;font-size:0.95rem}
+/* courses: two columns */
+.courses-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.course-card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
 
-/* review block */
-.review {
-  background: rgba(255,255,255,0.03);
-  padding:16px;
-  border-radius:8px;
-  margin-bottom:12px;
+/* review card */
+.review{background:rgba(255,255,255,0.03);padding:14px;border-radius:8px;margin-bottom:12px}
+
+/* forms */
+input,textarea,select{
+  width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);margin-top:6px;font-size:1rem;
 }
+label{display:block;font-size:0.95rem;color:var(--white)}
+
+/* buttons */
+.btn{display:inline-block;background:var(--gold);color:#111;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:800;margin-top:10px}
 
 /* footer */
-.footer{
-  text-align:center;
-  padding:26px;
-  margin-top:30px;
-  border-top:1px solid rgba(255,255,255,0.06);
-  font-size:0.95rem;
-}
+.footer{text-align:center;padding:26px;margin-top:30px;border-top:1px solid rgba(255,255,255,0.06);font-size:0.95rem}
+.footer img{max-width:220px;height:auto;display:block;margin:12px auto 6px}
 
-/* simple responsive tweaks */
-@media (max-width:800px){
-  .header{padding:14px}
-  .brand h1{font-size:1rem}
-  .nav{display:none}
-  .menu-toggle{display:block;color:var(--white);background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px;border-radius:8px}
-  .mobile-nav{
-    display:none;
-    background: rgba(0,0,0,0.06);
-    padding:12px;
-    border-radius:8px;
-    margin:10px 20px;
-  }
-  .mobile-nav a{display:block;padding:8px 0}
-}
-
-/* utility */
+/* utilities */
 .center{text-align:center}
-.small{font-size:0.9rem;opacity:0.9}
-.gold{color:var(--gold)}
-.btn{
-  display:inline-block;
-  background:var(--gold);
-  color:#222;
-  padding:10px 14px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
-  margin-top:8px;
+.small{font-size:0.9rem;opacity:0.95}
+
+/* responsive */
+@media (max-width:900px){
+  .services-table{grid-template-columns:repeat(2,1fr)}
+  .courses-grid{grid-template-columns:repeat(1,1fr)}
+}
+@media (max-width:640px){
+  .nav{display:none}
+  .menu-toggle{display:block}
+  .header{padding:12px}
+  .hero h2{font-size:1.5rem}
+  .services-table{grid-template-columns:1fr}
 }
