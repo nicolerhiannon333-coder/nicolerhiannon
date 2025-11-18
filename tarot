@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tarot Readings — Nicole Rhiannon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="brand"><img src="assets/logo.png" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
+  </header>
+
+  <div class="mobile-nav container" id="mobileNav" style="display:none">
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero container">
+      <h2>Tarot Readings</h2>
+      <p class="lead">Awakening your inner light, one session at a time.</p>
+    </section>
+
+    <section class="section container">
+      <h3>What to Expect</h3>
+      <p>Are you seeking clarity, guidance, and empowerment? Through intuitive Tarot interpretation you will gain tools to:</p>
+      <ul>
+        <li>Illuminate your life path</li>
+        <li>Strengthen relationships</li>
+        <li>Enhance spiritual growth</li>
+        <li>Boost career & financial clarity</li>
+      </ul>
+
+      <h3>Format & Pricing</h3>
+      <p>Available by Text, Voice Call, Video Call, or In-Person at The Healing Cottage (113 Water Street, East Dundee IL).</p>
+      <p><strong>Prices:</strong> $10 for 5 minutes • $25 for 15 minutes • $40 for 30 minutes</p>
+
+      <p class="small">Payments: Cash, Card, Zelle, PayPal</p>
+      <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=Tarot%20Session%20Booking">Book a Tarot Session</a>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="small">nicolerhiannon333@gmail.com • 224-337-3092</div></footer>
+
+<script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
+</body>
+</html>
