@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Services — Nicole Rhiannon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="brand">
+      <img src="assets/logo.png" class="logo" alt="Logo">
+      <h1>Nicole Rhiannon</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
+  </header>
+
+  <div class="mobile-nav container" id="mobileNav" style="display:none">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero container">
+      <h2>Services</h2>
+      <p class="lead">Explore offerings designed to support your healing and clarity. Click any service to learn more.</p>
+    </section>
+
+    <section class="section container">
+      <div class="grid">
+        <a class="card" href="tarot.html"><h3>Tarot Readings</h3><p>$10–$40</p></a>
+        <a class="card" href="energy.html"><h3>Energy Healing</h3><p>$10–$40</p></a>
+        <a class="card" href="redlight.html"><h3>Red Light Therapy</h3><p>$25</p></a>
+        <a class="card" href="video.html"><h3>3 Minute Video Reading</h3><p>$9</p></a>
+        <a class="card" href="onequestion.html"><h3>1 Question Answered</h3><p>$5</p></a>
+        <a class="card" href="private.html"><h3>Private Events</h3><p>$50 deposit</p></a>
+        <a class="card" href="course.html"><h3>Spiritual Ascension Course</h3><p>$150</p></a>
+        <a class="card" href="tarotcourse.html"><h3>Intuitive Tarot Course</h3><p>Details coming soon</p></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="small">nicolerhiannon333@gmail.com • 224-337-3092</div>
+  </footer>
+
+<script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
+</body>
+</html>
