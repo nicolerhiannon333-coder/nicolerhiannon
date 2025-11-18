@@ -1,16 +1,168 @@
-<form action="https://formspree.io/f/movrapqn" method="POST" class="contact-form">
+<!-- CONTACT FORM -->
+<form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
+    <label for="name">Name*</label>
+    <input type="text" id="name" name="name" required>
 
-  <label for="name">Name*</label>
-  <input type="text" id="name" name="name" required>
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" required>
 
-  <label for="email">Email*</label>
-  <input type="email" id="email" name="email" required>
+    <label for="phone">Phone Number (optional)</label>
+    <input type="tel" id="phone" name="phone">
 
-  <label for="phone">Phone Number (optional)</label>
-  <input type="tel" id="phone" name="phone">
+    <label for="message">Message (optional)</label>
+    <textarea id="message" name="message"></textarea>
 
-  <label for="message">Message (optional)</label>
-  <textarea id="message" name="message"></textarea>
-
-  <button type="submit">Send Message</button>
+    <button type="submit">Send Message</button>
 </form>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Nicole Rhiannon</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #faf7f5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            text-align: center;
+            background: #eee;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+        form {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 12px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        textarea {
+            height: 120px;
+        }
+        button {
+            margin-top: 15px;
+            background: #6b3fa0;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #562f83;
+        }
+        .location-box {
+            width: 90%;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .photos img {
+            width: 100%;
+            border-radius: 12px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #eee;
+        }
+        footer img {
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="favicon.png" alt="Nicole Rhiannon" width="60">
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Contact Nicole</h1>
+
+
+<!-- LOCATION BOX -->
+<div class="location-box">
+    <h2>The Healing Cottage</h2>
+    <p>
+        <strong>Nicole Rhiannon – by appointment only</strong><br>
+        113 Water Street<br>
+        East Dundee, IL 60118
+    </p>
+
+    <div class="photos">
+        <img src="healingcottageinside1.jpg" alt="">
+        <img src="healingcottageinside2.jpg" alt="">
+        <img src="healingcottageoutside0.jpg" alt="">
+        <img src="healingcottageoutside1.jpg" alt="">
+        <img src="healingcottageoutside2.jpg" alt="">
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Nicole Rhiannon</p>
+    <img src="horizontal logo.jpg" alt="Logo">
+</footer>
+
+</body>
+</html>
