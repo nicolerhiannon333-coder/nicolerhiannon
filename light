@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Red Light Therapy — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="assets/favicon.png"></head>
+<body>
+  <header class="header container">
+    <div class="brand"><img src="assets/logo.jpg" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a></nav>
+    <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
+  </header>
+
+  <div class="mobile-nav container" id="mobileNav" style="display:none"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+
+  <main>
+    <section class="hero container"><h2>Red Light Therapy</h2><p class="lead">Light up your life & boost your mood with LED light therapy.</p></section>
+
+    <section class="section container">
+      <img src="assets/redlight.jpg" alt="Red Light" style="width:100%;max-width:900px;border-radius:10px;margin-bottom:12px">
+      <p>20 minute sessions using tri-color red, infrared, and blue LED therapy. Benefits include improved circulation, reduced temporary muscle stiffness, and enhanced mood.</p>
+      <p><strong>Price:</strong> $25 for 20 minutes</p>
+      <p class="small">Locations: The Healing Cottage (East Dundee) & The Gypsy Haven (Elgin)</p>
+      <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=Red%20Light%20Therapy%20Booking">Book Light Therapy</a>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="small"><a href="mailto:nicolerhiannon333@gmail.com" style="color:inherit;text-decoration:underline">nicolerhiannon333@gmail.com</a> • <a href="tel:2243373092" style="color:inherit;text-decoration:underline">224-337-3092</a></div></footer>
+
+<script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
+</body>
+</html>
