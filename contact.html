@@ -1,168 +1,46 @@
-<!-- CONTACT FORM -->
-<form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
-    <label for="name">Name*</label>
-    <input type="text" id="name" name="name" required>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.png" type="image/png"></head><body>
+<header class="header"><div class="brand"><img src="assets/logo.png" class="logo" alt="logo"><h1>NICOLE RHIANNON</h1></div><nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="contact-btn">Contact</a></nav></header>
 
-    <label for="email">Email*</label>
-    <input type="email" id="email" name="email" required>
+<main class="container">
+  <section class="hero"><h2>Contact</h2><p class="lead">Leave your details and Nicole will contact you ASAP.</p></section>
 
-    <label for="phone">Phone Number (optional)</label>
-    <input type="tel" id="phone" name="phone">
+  <section class="section" style="max-width:720px;margin:0 auto">
+    <https://formspree.io/f/movrapqn>
+    <form action="https://formspree.io/f/movrapqn" method="POST">
+      <label for="name">Name *</label>
+      <input id="name" name="name" type="text" required>
 
-    <label for="message">Message (optional)</label>
-    <textarea id="message" name="message"></textarea>
+      <label for="email">Email *</label>
+      <input id="email" name="_replyto" type="email" required>
 
-    <button type="submit">Send Message</button>
-</form>
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel">
 
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message"></textarea>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Nicole Rhiannon</title>
+      <input type="text" name="_gotcha" style="display:none">
+      <button class="btn" type="submit">Send Message</button>
+    </form>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:18px 0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #faf7f5;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            text-align: center;
-            background: #eee;
-            padding: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #444;
-            font-weight: bold;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 32px;
-        }
-        form {
-            width: 90%;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin: 12px 0 5px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        textarea {
-            height: 120px;
-        }
-        button {
-            margin-top: 15px;
-            background: #6b3fa0;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            width: 100%;
-        }
-        button:hover {
-            background: #562f83;
-        }
-        .location-box {
-            width: 90%;
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            line-height: 1.6;
-        }
-        .photos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .photos img {
-            width: 100%;
-            border-radius: 12px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background: #eee;
-        }
-        footer img {
-            width: 200px;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <img src="favicon.png" alt="Nicole Rhiannon" width="60">
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<h1>Contact Nicole</h1>
-
-
-<!-- LOCATION BOX -->
-<div class="location-box">
-    <h2>The Healing Cottage</h2>
-    <p>
-        <strong>Nicole Rhiannon – by appointment only</strong><br>
-        113 Water Street<br>
-        East Dundee, IL 60118
-    </p>
-
-    <div class="photos">
-        <img src="healingcottageinside1.jpg" alt="">
-        <img src="healingcottageinside2.jpg" alt="">
-        <img src="healingcottageoutside0.jpg" alt="">
-        <img src="healingcottageoutside1.jpg" alt="">
-        <img src="healingcottageoutside2.jpg" alt="">
+    <div class="center small">
+      <h3>Location</h3>
+      <p>The Healing Cottage<br>Nicole Rhiannon • by appointment only<br>113 Water Street<br>East Dundee, IL 60118</p>
     </div>
-</div>
 
-<footer>
-    <p>© 2025 Nicole Rhiannon</p>
-    <img src="horizontal logo.jpg" alt="Logo">
-</footer>
+    <div class="grid" style="margin-top:12px">
+      <img src="assets/healingcottageinside1.jpg" alt="">
+      <img src="assets/healingcottageinside2.jpg" alt="">
+      <img src="assets/healingcottageoutside0.jpg" alt="">
+      <img src="assets/healingcottageoutside1.jpg" alt="">
+      <img src="assets/healingcottageoutside2.jpg" alt="">
+    </div>
+  </section>
+</main>
 
-</body>
-</html>
+<footer class="footer"><div class="payments"><a href="https://paypal.me/333nicole" target="_blank">PayPal</a> • <a href="mailto:nicolerhiannon333@gmail.com">Zelle</a></div><img src="assets/footer-logo.png" alt="footer logo" class="footer-logo"><div>© <span id="year"></span> NICOLE RHIANNON</div></footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
