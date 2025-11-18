@@ -1,158 +1,68 @@
-/* styles.css — global site styles (Helvetica, royal purple, white, gold) */
-:root{
-  --purple: #7F53A7;
-  --white: #FFFFFF;
-  --gold: #FFD700;
-  --max-width: 1100px;
-  --nav-height: 72px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nicole Rhiannon — Home</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
 
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:var(--purple);color:var(--white);font-family:Helvetica, Arial, sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}
+<header class="header">
+  <div class="brand">
+    <img src="assets/logo.png" alt="logo" class="logo">
+    <h1>NICOLE RHIANNON</h1>
+  </div>
 
-/* pinned header */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--nav-height);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 28px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.02));
-  z-index: 9999;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-}
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </nav>
+</header>
 
-/* brand */
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.brand img.logo{
-  width:54px;height:54px;object-fit:contain;border-radius:6px;
-}
-.brand h1{
-  font-size:16px;
-  font-weight:900;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--white);
-}
+<main class="container">
+  <section class="hero">
+    <h2>AWAKEN YOUR<br>INNER LIGHT<br><span class="gold">RADIATE YOUR TRUE SELF</span></h2>
+    <p class="lead">Nicole Rhiannon offers a range of services designed to bring balance, peace, and clarity.</p>
+    <p class="lead">Energy Healing, Red Light Therapy, & Intuitive Tarot Readings serve as catalysts to unburden the spirit, deepen self-connection, and reveal your divine purpose.</p>
+  </section>
 
-/* nav (right aligned) */
-.nav{
-  display:flex;
-  gap:20px;
-  align-items:center;
-}
-.nav a{
-  color:var(--white);
-  text-decoration:none;
-  font-weight:600;
-  padding:10px 12px;
-  border-radius:8px;
-}
-.nav a:hover{background:rgba(255,255,255,0.06)}
-.nav .contact-btn{
-  background:var(--gold);
-  color:#111;
-  padding:10px 14px;
-  font-weight:800;
-  border-radius:10px;
-  text-decoration:none;
-}
+  <section class="section grid" style="align-items:center">
+    <div>
+      <img src="assets/nicoleplain.jpg" alt="Nicole portrait" style="width:100%;border-radius:10px">
+    </div>
+    <div>
+      <h3 class="gold">Hi, I'm NICOLE RHIANNON</h3>
+      <p>A top-rated Tarot Reader and Energy Healer on multiple web & phone platforms. Starting in 2020, I have provided over <strong>2,000</strong> professional Readings to seekers just like you.</p>
+      <p>Trusted worldwide, I am honored to serve those seeking guidance, who are ready to experience personal breakthroughs, pierce the veil, shatter the illusion, and truly get to the Truth. I am here to guide you towards a brighter future.</p>
+      <p>I take the term "light worker" to another level, by also being a certified Light Therapist, and I thoroughly enjoy bringing light to peoples' world. Light Therapy has profound benefits, and can be an option to consider along your journey.</p>
+      <p><a class="btn" href="contact.html">Take the first step toward lasting transformation</a></p>
+    </div>
+  </section>
 
-/* mobile: show nav as wrap (not collapsing) */
-@media (max-width:760px){
-  .nav{gap:10px;font-size:14px;flex-wrap:wrap;justify-content:flex-end}
-  .brand h1{font-size:14px}
-}
+  <section class="section center">
+    <img src="assets/nicolebooks.jpg" alt="Nicole books" style="width:100%;max-width:800px;border-radius:10px">
+  </section>
+</main>
 
-/* page container (account for fixed header) */
-.container{
-  max-width:var(--max-width);
-  margin:0 auto;
-  padding: calc(var(--nav-height) + 22px) 20px 60px 20px;
-}
+<footer class="footer">
+  <div class="payments">
+    <a href="https://paypal.me/333nicole" target="_blank" rel="noopener">PayPal</a> • <a href="mailto:nicolerhiannon333@gmail.com">Zelle (nicolerhiannon333@gmail.com)</a>
+  </div>
+  <div>
+    <a class="social" href="https://www.facebook.com/nicolerhiannon.light" target="_blank">Facebook</a>
+    <a class="social" href="https://www.instagram.com/nicolerhiannon333/" target="_blank">Instagram</a>
+    <a class="social" href="https://www.tiktok.com/@nicolerhiannon333" target="_blank">TikTok</a>
+    <a class="social" href="https://www.youtube.com/@nicolerhiannon333" target="_blank">YouTube</a>
+  </div>
+  <img src="assets/footer-logo.png" alt="footer logo" class="footer-logo">
+  <div>© <span id="year"></span> NICOLE RHIANNON</div>
+</footer>
 
-/* hero */
-.hero{
-  text-align:center;
-  padding:36px 8px 28px 8px;
-}
-.hero h2{
-  font-weight:800;
-  letter-spacing:1px;
-  font-size:34px;
-  text-transform:uppercase;
-}
-.hero .gold{color:var(--gold)}
-.lead{max-width:900px;margin:12px auto;font-size:16px;opacity:0.98;line-height:1.45}
-
-/* sections & cards */
-.section{
-  margin:26px auto;
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border-radius:12px;padding:20px;
-}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-
-/* services 3x2 grid (desktop) */
-.services-grid{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:16px;
-}
-.service-card{
-  background: rgba(0,0,0,0.06);
-  border-radius:10px;
-  padding:12px;
-  text-align:center;
-}
-.service-card img{
-  width:100%;
-  aspect-ratio:1/1; /* makes image square */
-  object-fit:cover;
-  border-radius:8px;
-}
-.service-card h3{margin:10px 0;font-weight:800}
-
-/* courses 2-col */
-.courses-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.course-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px}
-
-/* review block */
-.review{background:rgba(255,255,255,0.03);padding:14px;border-radius:8px;margin-bottom:12px}
-
-/* forms */
-label{display:block;font-weight:700;margin:10px 0 6px}
-input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);font-size:15px}
-textarea{min-height:120px}
-.btn{display:inline-block;background:var(--gold);color:#111;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:800}
-
-/* footer */
-.footer{
-  text-align:center;
-  margin-top:28px;
-  padding:22px 18px;
-  border-top:1px solid rgba(255,255,255,0.04);
-  font-size:14px;
-}
-.footer .payments{margin:8px 0}
-.footer a.social{margin:0 8px;display:inline-block;color:var(--white);text-decoration:none}
-.footer img.footer-logo{max-width:220px;margin:12px auto;display:block}
-
-/* responsive tweaks */
-@media (max-width:1000px){
-  .services-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:640px){
-  .services-grid{grid-template-columns:1fr}
-  .courses-grid{grid-template-columns:1fr}
-  .hero h2{font-size:22px}
-}
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
