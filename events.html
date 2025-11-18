@@ -1,33 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Private Events — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="assets/favicon.png"></head>
-<body>
-  <header class="header container"><div class="brand"><img src="assets/logo.jpg" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
-  <nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a></nav>
-  <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Private Events — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.png" type="image/png"></head><body>
+<header class="header"><div class="brand"><img src="assets/logo.png" class="logo" alt="logo"><h1>NICOLE RHIANNON</h1></div><nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="contact-btn">Contact</a></nav></header>
 
-  <div class="mobile-nav container" id="mobileNav" style="display:none"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<main class="container">
+  <section class="hero"><h2>Private Events</h2><p class="lead">Elevate your celebration with readings, healing, and light.</p></section>
+  <section class="section">
+    <img src="assets/events.png" alt="" style="width:100%;max-width:900px;border-radius:10px;margin-bottom:12px">
+    <h3>Bookings & Offerings</h3>
+    <p>$50 non-refundable deposit required to reserve date. Travel fees may apply. Contact for custom quotes.</p>
+    <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=Private%20Event%20Inquiry">Inquire</a>
+  </section>
+</main>
 
-  <main>
-    <section class="hero container"><h2>Private Events with Nicole</h2><p class="lead">Elevate your next celebration with readings, healing, and light.</p></section>
+<footer class="footer"><div class="payments"><a href="https://paypal.me/333nicole" target="_blank">PayPal</a> • <a href="mailto:nicolerhiannon333@gmail.com">Zelle</a></div><img src="assets/footer-logo.png" alt="footer logo" class="footer-logo"><div>© <span id="year"></span> NICOLE RHIANNON</div></footer>
 
-    <section class="section container">
-      <img src="assets/events.png" alt="Events" style="width:100%;max-width:900px;border-radius:10px;margin-bottom:12px">
-      <h3>What I Offer</h3>
-      <ul>
-        <li>Tarot readings</li><li>Energy healing sessions</li><li>Red Light Therapy demos</li><li>Custom digital invitations (3 revisions)</li>
-      </ul>
-      <h3>Booking</h3>
-      <p>$50 non-refundable deposit to secure date. Final pricing quoted based on event details. Travel fee may apply.</p>
-      <p class="small">Payment options: Cash, Card, Zelle, PayPal</p>
-      <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=Private%20Event%20Inquiry">Inquire About a Private Event</a>
-    </section>
-  </main>
-
-  <footer class="footer"><div class="small"><a href="mailto:nicolerhiannon333@gmail.com" style="color:inherit;text-decoration:underline">nicolerhiannon333@gmail.com</a> • <a href="tel:2243373092" style="color:inherit;text-decoration:underline">224-337-3092</a></div></footer>
-
-<script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
-</body>
-</html>
-
-
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
