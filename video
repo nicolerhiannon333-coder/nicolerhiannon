@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>3 Minute Video Reading</title><link rel="stylesheet" href="styles.css"></head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>3 Minute Video Reading — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="assets/favicon.png"></head>
 <body>
-<header class="header container">
-  <div class="brand"><img src="assets/logo.png" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
+  <header class="header container"><div class="brand"><img src="assets/logo.jpg" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
   <nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a></nav>
-  <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
-</header>
+  <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button></header>
 
-<div class="mobile-nav container" id="mobileNav" style="display:none"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  <div class="mobile-nav container" id="mobileNav" style="display:none"><a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
 
-<main>
-  <section class="hero container"><h2>3 Minute Video Reading</h2><p class="lead">Quick, focused guidance delivered as a short personal video.</p></section>
+  <main>
+    <section class="hero container"><h2>3 Minute Video Reading</h2><p class="lead">Quick, focused guidance delivered as a personalized video.</p></section>
 
-  <section class="section container">
-    <p>Submit your situation and question. Nicole will record up to a 3-minute video reading personalized to your situation.</p>
-    <p><strong>Price:</strong> $9</p>
-    <p class="small">Payment: Cash, Card, Zelle, PayPal</p>
-    <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=3%20Minute%20Video%20Reading">Request a Video Reading</a>
-  </section>
-</main>
+    <section class="section container">
+      <img src="assets/3M.png" alt="3 Minute" style="width:100%;max-width:700px;border-radius:10px;margin-bottom:12px">
+      <p>Submit your situation & question. Nicole will record up to a 3-minute video reading tailored to your situation.</p>
+      <p><strong>Price:</strong> $9</p>
+      <a class="btn" href="mailto:nicolerhiannon333@gmail.com?subject=3%20Minute%20Video%20Reading">Request a Video Reading</a>
+    </section>
+  </main>
 
-<footer class="footer"><div class="small">nicolerhiannon333@gmail.com • 224-337-3092</div></footer>
+  <footer class="footer"><div class="small"><a href="mailto:nicolerhiannon333@gmail.com" style="color:inherit;text-decoration:underline">nicolerhiannon333@gmail.com</a> • <a href="tel:2243373092" style="color:inherit;text-decoration:underline">224-337-3092</a></div></footer>
+
 <script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
 </body>
 </html>
+
