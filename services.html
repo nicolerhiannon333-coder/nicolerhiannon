@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Services — Nicole Rhiannon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Services — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.png" type="image/png"></head>
 <body>
-  <header class="header container">
-    <div class="brand"><img src="assets/logo.jpg" class="logo" alt="logo"><h1>Nicole Rhiannon</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a>
-    </nav>
-    <button class="menu-toggle" onclick="toggleMobileNav()">Menu</button>
-  </header>
+<header class="header">
+  <div class="brand"><img src="assets/logo.png" class="logo" alt="logo"><h1>NICOLE RHIANNON</h1></div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </nav>
+</header>
 
-  <div class="mobile-nav container" id="mobileNav" style="display:none">
-    <a href="index.html">Home</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<main class="container">
+  <section class="hero"><h2>Services</h2><p class="lead">Explore offerings designed to support your healing and clarity. Click a service to learn more.</p></section>
+
+  <section class="section">
+    <div class="services-grid">
+      <a class="service-card" href="tarot.html">
+        <img src="assets/tarotweb.jpg" alt="Tarot">
+        <h3>Tarot Readings</h3>
+      </a>
+
+      <a class="service-card" href="energy.html">
+        <img src="assets/chios_cropped.png" alt="Energy">
+        <h3>Energy Healing</h3>
+      </a>
+
+      <a class="service-card" href="light.html">
+        <img src="assets/redlight.jpg" alt="Red Light">
+        <h3>Red Light Therapy</h3>
+      </a>
+
+      <a class="service-card" href="video.html">
+        <img src="assets/3M.png" alt="Video">
+        <h3>3 Minute Video Reading</h3>
+      </a>
+
+      <a class="service-card" href="onequestion.html">
+        <img src="assets/1Q.png" alt="One Question">
+        <h3>1 Question Answered</h3>
+      </a>
+
+      <a class="service-card" href="events.html">
+        <img src="assets/events.png" alt="Events">
+        <h3>Private Events</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3 class="center">Courses</h3>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="assets/SASH.jpg" alt="SASH">
+        <h3>Spiritual Ascension &amp; Self-Healing</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/9to15.jpg" alt="Tarot Course">
+        <h3>Intuitive Tarot Course</h3>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="payments"><a href="https://paypal.me/333nicole" target="_blank">PayPal</a> • <a href="mailto:nicolerhiannon333@gmail.com">Zelle</a></div>
+  <div>
+    <a class="social" href="https://www.facebook.com/nicolerhiannon.light" target="_blank">Facebook</a>
+    <a class="social" href="https://www.instagram.com/nicolerhiannon333/" target="_blank">Instagram</a>
+    <a class="social" href="https://www.tiktok.com/@nicolerhiannon333" target="_blank">TikTok</a>
+    <a class="social" href="https://www.youtube.com/@nicolerhiannon333" target="_blank">YouTube</a>
   </div>
+  <img src="assets/footer-logo.png" alt="footer logo" class="footer-logo">
+  <div>© <span id="year"></span> NICOLE RHIANNON</div>
+</footer>
 
-  <main>
-    <section class="hero container"><h2>Services</h2><p class="lead">Explore offerings designed to support your healing and clarity. Click a service to learn more.</p></section>
-
-    <section class="section container">
-      <div class="services-table">
-        <a class="service-card" href="tarot.html">
-          <img src="assets/tarotweb.jpg" alt="Tarot Readings">
-          <h3>Tarot Readings</h3>
-        </a>
-
-        <a class="service-card" href="energy.html">
-          <img src="assets/chios_cropped.png" alt="Energy Healing">
-          <h3>Energy Healing</h3>
-        </a>
-
-        <a class="service-card" href="light.html">
-          <img src="assets/redlight.jpg" alt="Red Light Therapy">
-          <h3>Red Light Therapy</h3>
-        </a>
-
-        <a class="service-card" href="video.html">
-          <img src="assets/3M.png" alt="3 Minute Video Reading">
-          <h3>3 Minute Video Reading</h3>
-        </a>
-
-        <a class="service-card" href="onequestion.html">
-          <img src="assets/1Q.png" alt="One Question">
-          <h3>1 Question Answered</h3>
-        </a>
-
-        <a class="service-card" href="events.html">
-          <img src="assets/events.png" alt="Private Events">
-          <h3>Private Events with Nicole</h3>
-        </a>
-      </div>
-    </section>
-
-    <section class="section container">
-      <h3 class="center">Courses</h3>
-      <div class="courses-grid">
-        <div class="course-card">
-          <img src="assets/SASH.jpg" alt="Spiritual Ascension & Self-Healing">
-          <h3>Spiritual Ascension & Self-Healing Course</h3>
-        </div>
-        <div class="course-card">
-          <img src="assets/9to15.jpg" alt="Intuitive Tarot Course">
-          <h3>Intuitive Tarot Course</h3>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="small"><a href="mailto:nicolerhiannon333@gmail.com" style="color:inherit;text-decoration:underline">nicolerhiannon333@gmail.com</a> • <a href="tel:2243373092" style="color:inherit;text-decoration:underline">224-337-3092</a></div>
-  </footer>
-
-<script>function toggleMobileNav(){const el=document.getElementById('mobileNav');el.style.display=(el.style.display==='none'||!el.style.display)?'block':'none'}</script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
