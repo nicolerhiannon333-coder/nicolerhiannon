@@ -1,61 +1,104 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — Nicole Rhiannon</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.png" type="image/png"></head><body>
-<header class="header"><div class="brand"><img src="assets/logo.png" alt="logo" class="logo" style="width:36px;"><h1>NICOLE RHIANNON</h1></div><nav class="nav"><a href="index.html">HOME</a><a href="services.html">SERVICES</a><a href="reviews.html">REVIEWS</a><a href="about.html">ABOUT</a><a href="contact.html" class="gold-button">CONTACT</a></nav></header>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Nicole Rhiannon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="brand">
+    <img src="assets/logo.png" alt="logo" class="logo">
+    <h1>NICOLE RHIANNON</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="services.html">SERVICES</a>
+    <a href="reviews.html">REVIEWS</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html" class="gold-button">CONTACT</a>
+  </nav>
+</header>
 
 <main class="container">
-  <section class="hero" style="text-align:center;margin-top:18px;"><h2 style="color:#ffd700;font-family:Comfortaa, sans-serif;">CONTACT</h2><p style="color:white;max-width:900px;margin:12px auto;font-size:18px;">Leave your details and Nicole will contact you ASAP.</p></section>
 
-  <section style="max-width:720px;margin:16px auto;">
-    <form action="https://formspree.io/f/movrapqn" method="POST" style="display:flex;flex-direction:column;gap:12px;">
-      <label for="name" style="color:white;font-weight:700;">Name *</label>
-      <input id="name" name="name" type="text" required style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.12)">
+  <!-- HERO -->
+  <section class="hero">
+    <h2>CONTACT</h2>
+    <p class="center-text" style="max-width: 900px; font-size: 18px;">
+      Leave your details and Nicole will contact you ASAP.
+    </p>
+  </section>
 
-      <label for="email" style="color:white;font-weight:700;">Email *</label>
-      <input id="email" name="_replyto" type="email" required style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.12)">
+  <!-- CONTACT FORM -->
+  <section style="max-width: 720px; margin: 0 auto;">
 
-      <label for="phone" style="color:white;font-weight:700;">Phone (optional)</label>
-      <input id="phone" name="phone" type="tel" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.12)">
+    <form action="https://formspree.io/f/movrapqn" method="POST" style="display: flex; flex-direction: column; gap: 14px;">
 
-      <label for="message" style="color:white;font-weight:700;">Message (optional)</label>
-      <textarea id="message" name="message" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.12);min-height:120px"></textarea>
+      <label for="name" style="font-weight: 700;">Name *</label>
+      <input id="name" name="name" type="text" required
+             style="padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.12);">
 
-      <input type="text" name="_gotcha" style="display:none">
+      <label for="email" style="font-weight: 700;">Email *</label>
+      <input id="email" name="_replyto" type="email" required
+             style="padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.12);">
+
+      <label for="phone" style="font-weight: 700;">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel"
+             style="padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.12);">
+
+      <label for="message" style="font-weight: 700;">Message (optional)</label>
+      <textarea id="message" name="message"
+                style="padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.12); min-height: 120px;"></textarea>
+
+      <input type="text" name="_gotcha" style="display: none;">
+      
       <button type="submit" class="gold-button">Submit</button>
+
     </form>
 
-    <div style="height:24px;"></div>
+    <!-- LOCATION -->
+    <h3 style="margin-top: 40px;">LOCATION</h3>
 
-    <h3 style="color:#ffd700;text-align:center;font-family:Comfortaa, sans-serif;">LOCATION</h3>
-    <div style="text-align:center;color:white;font-size:16px;margin-bottom:12px;">
+    <div class="center-text" style="font-size: 16px; margin-bottom: 20px;">
       The Healing Cottage<br>
       Nicole Rhiannon • by appointment only<br>
       113 Water Street<br>
       East Dundee, IL 60118
     </div>
 
-    <!-- inside images: 2-column -->
-    <div class="table two-col" style="gap:12px;margin-bottom:18px;">
-      <img src="assets/healingcottageinside1.jpg" alt="healing cottage inside 1" style="width:100%;border-radius:8px;object-fit:cover;">
-      <img src="assets/healingcottageinside2.jpg" alt="healing cottage inside 2" style="width:100%;border-radius:8px;object-fit:cover;">
+    <!-- Inside images (2-col) -->
+    <div class="table two-col" style="gap: 20px; margin-bottom: 28px;">
+      <img src="assets/healingcottageinside1.jpg" alt="healing cottage inside 1">
+      <img src="assets/healingcottageinside2.jpg" alt="healing cottage inside 2">
     </div>
 
-    <!-- outside images: 3-column -->
-    <div class="table three-col" style="gap:12px;">
-      <img src="assets/healingcottageoutside0.jpg" alt="outside 0" style="width:100%;border-radius:8px;object-fit:cover;">
-      <img src="assets/healingcottageoutside1.jpg" alt="outside 1" style="width:100%;border-radius:8px;object-fit:cover;">
-      <img src="assets/healingcottageoutside2.jpg" alt="outside 2" style="width:100%;border-radius:8px;object-fit:cover;">
+    <!-- Outside images (3-col) -->
+    <div class="table three-col" style="gap: 20px;">
+      <img src="assets/healingcottageoutside0.jpg" alt="healing cottage outside 0">
+      <img src="assets/healingcottageoutside1.jpg" alt="healing cottage outside 1">
+      <img src="assets/healingcottageoutside2.jpg" alt="healing cottage outside 2">
     </div>
+
   </section>
 </main>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-left">
-    <strong>Payments</strong><br>Cash / Card<br><a href="https://paypal.me/333nicole" target="_blank">PayPal</a>
+    <strong>Payments</strong><br>
+    Cash / Card<br>
+    <a href="https://paypal.me/333nicole" target="_blank">PayPal</a>
   </div>
 
   <div class="footer-center">
-    <img src="assets/footer-logo.png" alt="Footer logo" style="width:120px;">
-    <div style="margin-top:6px;">
+    <img src="assets/footer-logo.png" alt="Footer logo">
+    <div style="margin-top: 6px;">
       <a href="mailto:nicolerhiannon333@gmail.com">nicolerhiannon333@gmail.com</a><br>
       <a href="tel:2243373092">224-337-3092</a>
     </div>
@@ -68,5 +111,6 @@
     <a href="https://www.youtube.com/@nicolerhiannon333" target="_blank">YouTube</a>
   </div>
 </footer>
+
 </body>
 </html>
